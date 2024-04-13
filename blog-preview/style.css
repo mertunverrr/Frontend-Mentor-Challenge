@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap);
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Paragraph-font-size: 16px;
+    --Font-family: 'Figtree', sans-serif;
+    --Font-weight: 500;
+    --Font-weight-heading: 800;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--Font-family);
+    background-color: var(--Yellow);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    background-color: var(--White);
+    box-shadow: 5px 5px var(--Black);
+}
+.card:hover{
+    box-shadow: 10px 10px var(--Black);
+    cursor: pointer;
+}
+
+#headingImg{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#label{
+    font-weight: var(--Font-weight-heading);
+    font-size: var(--Paragraph-font-size);
+    margin-left: 20px;
+    background-color: var(--Yellow);
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: var(--Black);
+}
+
+#date{
+    font-size: var(--Paragraph-font-size);
+    font-weight: var(--Font-weight);
+    color: var(--Black);
+    margin-left: 20px;
+}
+
+#heading{
+    font-weight: var(--Font-weight-heading);
+    font-size: calc(var(--Paragraph-font-size)*1.5);
+    margin-left: 20px;
+    color: var(--Yellow);
+}
+
+#paragraph{
+    font-size: var(--Paragraph-font-size);
+    font-weight: var(--Font-weight);
+    color: var(--Grey);
+    margin: auto 20px;
+}
+
+.personal-inf{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#avatar{
+    height: 40px;
+}
+
+#name{
+    margin-left: 10px;
+    font-size: calc(var(--Paragraph-font-size)/1.25);
+    font-weight: var(--Font-weight-heading);
+}
+
+
+#footer{
+    text-align: center;  
+    margin-top: 17px;
+    font-size: calc(var(--Paragraph-font-size)/1.25);
+}

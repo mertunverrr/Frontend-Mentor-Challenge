@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Component Main</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card" id="first">
+            <img src="images/icon-star.svg" alt="star icon" id="starImg">
+            <h1 id="firstHeading">How did we do?</h1>
+            <p id="firstSubText">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="button-section">
+                <button type="button" class="rating-btn">1</button>
+                <button type="button" class="rating-btn">2</button>
+                <button type="button" class="rating-btn">3</button>
+                <button type="button" class="rating-btn">4</button>
+                <button type="button" class="rating-btn">5</button>
+            </div>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+        <div class="card visibility" id="second">
+            <img src="images/illustration-thank-you.svg" id="thanksImg">
+            <p class="selected">You selected 4 out of 5</p>
+            <h1 id="thanksHeading">Thank you!</h1>
+            <p id="secondSubText">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

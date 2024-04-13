@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <form id="dateInput" class="user-input">
+            <div class="user-input-wrapper">
+                <div id="user-day" class="user-input-details">
+                    <label for="day" class="input-label">day</label>
+                    <input class="input" id="day" name="Day" type="number" min="1" max="31" placeholder="DD" value="">
+                    <div class="error-message day-error"></div>
+                </div>
+                <div id="user-month" class="user-input-details">
+                    <label for="month" class="input-label">month</label>
+                    <input class="input" id="month" name="Month" type="number" min="1" max="12" placeholder="MM" value="">
+                    <div class="error-message month-error"></div>
+                </div>
+                <div id="year-day" class="user-input-details">
+                    <label for="year" class="input-label">year</label>
+                    <input class="input" id="year" name="Year" type="number" min="0" max="2024" placeholder="YYYY" value="">
+                    <div class="error-message year-error"></div>
+                </div>
+            </div>
+            <div class="btn">
+            <button class="calcBtn" type="button">
+                <img src="assets/images/icon-arrow.svg" alt="arrow icon">
+            </button>
+            </div>
+        </form>
+        <hr>
+        <div class="user-output">
+            <h1 class="output"><span class="output-value" id="yearsOutput">--</span> years</h1>
+            <h1 class="output"><span class="output-value" id="monthsOutput">--</span> months</h1>
+            <h1 class="output"><span class="output-value" id="daysOutput">--</span> days</h1>
+        </div>
+    
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

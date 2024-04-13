@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Subscribe</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="successstyle.css">
+</head>
+<body>
+    <main class="container">
+        <div class="success-page">
+            <img src="assets/images/icon-success.svg" alt="success icon">
+            <h1 id="heading">Thanks for subscribing!</h1>
+            <p id="subText">A confirmation email has been sent to <span id="mailValue"></span>. Please open it and click the button inside to confirm your subscription.</p>
+            <button onclick="dismiss()" id="resetBtn" type="button">Dismiss message</button>
+        </div>
+    </main>
+
+
+
+
+
+    <script>
+        let email = sessionStorage.getItem('email');
+        document.getElementById("mailValue").textContent = email;
+
+        function dismiss() {
+        window.location.href = "index.html";
+    }
+    </script>
+</body>
+</html>

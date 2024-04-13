@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --font-size-prgprh: 15px;
+    --font-weight-1: 400;
+    --font-weight-2: 700;
+    --font-family: 'Overpass';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.visibility{
+    visibility: hidden;
+    position: absolute;
+}
+
+.card{
+    width: 50vh;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    height: auto;
+    border-radius: 2rem;
+    padding: 0px 30px;
+}
+
+#starImg{
+    margin: 20px 0px;
+    padding: 10px;
+    background-color:hsl(211, 23%, 23%);
+    border-radius: 50%;
+}
+
+#firstHeading{
+    margin-bottom: 10px;
+    font-weight: var(--font-weight-2);
+    font-size: 2rem;
+}
+
+#firstSubText{
+    margin: 0px;
+    font-size: var(--font-size-prgprh);
+    color: var(--Medium-Grey);
+}
+
+.button-section{
+    margin:30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rating-btn{
+    background-color:hsl(211, 23%, 23%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-prgprh);
+    font-weight: var(--font-weight-2);
+}
+.rating-btn:hover{
+    background-color: hsl(212, 14%, 24%);
+}
+.rating-btn:active{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.submit-btn{
+    background: var(--Orange);
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    color: var(--White);    
+	border: none;
+    padding: .7rem;
+	cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: var(--font-weight-2);
+}
+
+.submit-btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+
+}
+
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#second>img{
+    margin: 30px;
+}
+
+#second>.selected{
+    color: var(--Orange);
+    background-color:hsl(211, 23%, 23%);
+    padding: 7px;
+    border-radius: 2rem;
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-prgprh);
+}
+
+#second>#thanksHeading{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: var(--font-weight-2);
+}
+
+#second>#secondSubText{
+    font-size: var(--font-size-prgprh);
+    font-weight: var(--font-weight-1);
+    margin: 20px 10px;
+    text-align: center;
+    color: var(--Light-Grey);
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --clr-active: hsl(275, 60%, 55%);
+    --font-size-prgrph: 16px;
+    --font-family: 'Work Sans'
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--light-pink);
+}
+
+.bg-wrapper{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    background-color: var(--white);
+    border-radius: 24px;
+    max-width: 800px;
+    margin: -100px auto;
+    line-height: 1.5rem;
+    padding: 20px;
+}
+
+.question{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.question:hover{
+    color: var(--clr-active);
+}
+
+.question-item{
+    padding-bottom: 20px;
+}
+
+.question-item img{
+    text-align: right;
+}
+
+.answer{
+    display: none;
+    font-size: 1rem;
+    color: var(--grayish-purple);
+}
+.answer.show{
+    display: block;
+}
+
+h1 img{
+    padding-right: 20px;
+}
+
+h1{
+    font-size: 3.1rem;
+    margin-right: 500px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        display: flex;
+        font-size: var(2.8rem);
+        margin: 10px;
+        padding-top: 20px;
+    }   
+    .question {
+        font-size: 1rem;
+    }
+    .answer{
+        font-size: 1rem;
+    }
+}

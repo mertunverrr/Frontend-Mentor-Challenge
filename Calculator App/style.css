@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+:root {
+	--main-bg-color: hsl(222, 26%, 31%);
+	--sub-bg-color: hsl(223, 31%, 20%);
+	--screen-bg-color: hsl(224, 36%, 15%);
+
+	--key-bg-color: hsl(225, 21%, 49%);
+	--key-shadow-point-color: hsl(224, 28%, 35%);
+	--point-color: hsl(6, 63%, 50%);
+	--point-color-dark: hsl(6, 70%, 34%);
+	--key-inactive-color: hsl(30, 25%, 89%);
+	--key-shadow-color: hsl(28, 16%, 65%);
+
+	--text-display-color:hsl(0, 0%, 100%);
+	--text-color: hsl(221, 14%, 31%);
+	--text-light: hsl(0, 0%, 100%);
+
+	--radius-1: 0.5rem;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+/* Theme 2 */
+body.two {
+	--main-bg-color: hsl(0, 0%, 90%);
+	--sub-bg-color: hsl(0, 5%, 81%);
+	--screen-bg-color: hsl(0, 0%, 93%);
+
+	--key-bg-color: hsl(185, 42%, 37%);
+	--key-shadow-point-color: hsl(185, 58%, 25%);
+	--point-color: hsl(25, 98%, 40%);
+	--point-color-dark: hsl(25, 99%, 27%);
+	--key-inactive-color: hsl(45, 7%, 89%);
+	--key-shadow-color: hsl(35, 11%, 61%);
+
+	--text-display-color:hsl(60, 10%, 19%);
+	--text-color: hsl(60, 10%, 19%);
+	--text-light: hsl(0, 0%, 100%);
+}
+/* Theme 3 */
+body.three {
+	--main-bg-color: hsl(268, 75%, 9%);
+	--sub-bg-color: hsl(268, 71%, 12%);
+	--screen-bg-color: hsl(268, 71%, 12%);
+
+	--key-bg-color: hsl(281, 89%, 26%);
+	--key-shadow-point-color: hsl(285, 91%, 52%);
+	--point-color: hsl(176, 100%, 44%);
+	--point-color-dark: hsl(177, 92%, 70%);
+	--key-inactive-color: hsl(268, 47%, 21%);
+	--key-shadow-color: hsl(290, 70%, 36%);
+
+	--text-display-color:hsl(52, 100%, 62%);
+	--text-color: hsl(52, 100%, 62%);
+	--text-light: hsl(0, 0%, 100%);
+}
+
+button:hover{
+    filter: brightness(125%);
+	cursor: pointer;
+}
+
+main{
+	min-width: 370px;
+	max-width: 600px;
+	height: 80vh;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	font-weight: 600;
+}
+
+.header{
+	color: var(--text-light);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+#logo{
+	font-size: 2rem;
+}
+
+.theme-area{
+	display: flex;
+	position: relative;
+}
+
+#themeText{
+	position: relative;
+	font-size: 16px;
+	bottom: -0.4rem;
+	left: -1rem;
+	text-transform: uppercase;
+}
+
+.theme-radio-area{
+	display: flex;
+}
+
+.theme-numbers{
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	font-size: 12px;
+	letter-spacing:13px;
+	margin-left: 5px;
+}
+.theme-numbers>p:hover{
+	cursor: pointer;
+	color: var(--point-color);
+}
+
+.theme-state-toggle{
+	background-color: var(--sub-bg-color);
+	border-radius: 1rem;
+	border: 0.2rem var(--sub-bg-color) solid;
+	display: flex;
+	justify-content: center;
+}
+
+.toggle-btn{
+	background-color: var(--point-color);
+	appearance: none;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	padding: 0;
+	opacity: 0;
+}
+.toggle-btn:hover{
+	cursor: pointer;
+}
+
+#one{
+	opacity: 1;
+}
+
+.content{
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.result{
+	width: 100%;
+	background-color: var(--screen-bg-color);
+	padding: 20px;
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+	text-align: end;
+	color: var(--text-display-color);
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+.keypad{
+	background-color: var(--sub-bg-color);
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.wrap1{
+	display: grid;
+	width: 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 1rem;
+
+}
+.wrap2{
+	display: grid;
+	width: 1fr;
+	grid-template-columns:  repeat(2, 1fr);
+	grid-gap: 1rem;
+}
+
+.wrap1>button{
+	padding-top: 0.5rem;
+	height: 4rem;
+	border-radius: 0.5rem;
+	background-color: var(--key-inactive-color);
+	border: none;
+	color: var(--text-color);
+	box-shadow: 0 0.3rem var(--key-shadow-color);
+	font-size: 2rem;
+	font-weight: 600;
+}
+#delBtn{
+	background-color: var(--key-bg-color);
+	box-shadow: 0 0.3rem var(--key-shadow-point-color);
+	color: var(--text-light);
+}
+
+.rec-btn{
+	height: 4rem;
+	border-radius: 0.5rem;
+	background-color: var(--key-bg-color);
+	border: none;
+	color: var(--text-light);
+	box-shadow: 0 0.3rem var(--key-shadow-point-color);
+	font-weight: 600;
+	font-size: 2rem;
+	padding-top: 0.5rem;
+}
+#solveBtn{
+	background-color: var(--point-color);
+	box-shadow: 0 0.3rem var(--point-color-dark);
+}
+

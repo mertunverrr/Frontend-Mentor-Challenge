@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+:root {
+    --Heading: 'Young Serif', serif;
+    --Heading-Weight: 400;
+    --Content: 'Outfit', sans-serif;
+    --Content-Weight-1: 400;
+    --Content-Weight-2: 700;
+    --Content-font-size: 16px;
+}
+
+
+*{
+    font-family: var(--Content);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: hsl(30, 54%, 90%);
+}
+
+#main-heading{
+    color: hsl(24, 5%, 18%);
+    font-family: var(--Heading);
+    font-weight: var(--Heading-Weight);
+    font-size: calc(var(--Content-font-size)*1.75);
+}
+
+#sub-heading{
+    font-size: calc(var(--Content-font-size)*1.25);
+    color: hsl(14, 45%, 36%);
+    font-family: var(--Heading);
+}
+
+img{
+    width:100%;
+    border-radius: 10px;
+
+}
+
+.card{
+    max-height: fit-content;
+    max-width: 375px;
+    margin:5px auto;
+    background: white;
+    padding: 30px;
+    font-weight: var(--Content-Weight-1);
+    font-size: calc(var(--Content-font-size)/1.25);
+    color: hsl(30, 10%, 34%);
+    border-radius: 10px;
+}
+
+#bold-content{
+    font-weight: var(--Content-Weight-2);
+}
+
+#preparation-heading{
+    font-weight: var(--Content-Weight-2);
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.preparation li::marker{
+    list-style-type: circle;
+    color: hsl(332, 51%, 32%);
+}
+
+li{
+    padding: 5px 0px;
+}
+
+.ingredients li::marker{
+    list-style-type: circle;
+    color: hsl(14, 45%, 36%);
+}
+
+hr{
+    border-color: hsl(30, 18%, 87%);
+    width: 100%;
+}
+
+ul,ol{
+    padding: 0px 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td{
+    padding: 20px;
+}
+
+#bold-data{
+    font-weight: var(--Content-Weight-2);
+    color: hsl(14, 45%, 36%);
+}
+
+.attribution{
+    margin: 0px;
+    text-align: center;
+    font-size: calc(var(--Content-font-size)/1.3);
+}
